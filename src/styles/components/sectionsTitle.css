@@ -1,0 +1,113 @@
+.sections-title-container {
+    margin-top: 80px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.sections-svg-wrapper {
+    position: absolute;
+    top: 0;
+    left: -110px;
+    z-index: 1;
+}
+.sections-title-header {
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    margin-bottom: 20px;
+}
+.container {
+    padding: 32px;
+    direction: rtl;
+    position: relative;
+    z-index: 8; 
+}
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+.row:last-child {
+    margin-bottom: 0;
+}
+.rectangle {
+    background-color: #000;
+    color: #ffffff;
+    padding: 16px 32px;
+    border-radius: 16px;
+    text-align: center;
+    min-width: 120px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
+    position: relative;
+    z-index: 12;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.rectangle:hover {
+    background-color: #2563eb;
+    transition: background-color 0.3s ease;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 920px) {
+    .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .rectangle {
+        padding: 12px 24px;
+        min-width: 100px;
+        font-size: 13px;
+        flex: 0 0 auto;
+    }
+    .container {
+        padding: 16px;
+    }
+}
+@media (max-width: 768px) {
+    .row {
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+    }
+    .rectangle {
+        padding: 12px 24px;
+        min-width: 100px;
+        font-size: 13px;
+        flex: 0 0 auto;
+    }
+    .container {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .row {
+        gap: 8px;
+    }
+    .rectangle {
+        padding: 10px 20px;
+        min-width: 90px;
+        font-size: 12px;
+    }
+    .container {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .rectangle {
+        min-width: 80px;
+        padding: 8px 16px;
+        font-size: 11px;
+    }
+}
