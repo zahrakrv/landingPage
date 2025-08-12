@@ -1,0 +1,62 @@
+import '../../styles/components/transportSection.css'
+import towerImg from '../../assets/image/tower.png'
+import arrow from '../../assets/image/arrow.png'
+import Divider from './Divider'
+import TransportSmallCard from './TransportSmallCard.jsx'
+
+const TransportSection = () => {
+    return(
+        <div className="transport-section">
+            <div className='tower-img'>
+                <img src={towerImg} alt={'one company'} />
+            </div>
+            <div className='gray-box'>
+                <div>
+                    <div className='more-section'>
+                        <Divider title={'ترابری'}/>
+                        <img src={arrow} alt={'arrow'} />
+                    </div>
+                    <div className='cards-wrapper'>
+                        <TransportSmallCard haveAbout/>
+                        <TransportSmallCard />
+                        <TransportSmallCard />
+                    </div>
+                </div>
+                <div>
+                    <div className='more-section'>
+                        <Divider title={'مالی اعتباری'}/>
+                        <img src={arrow} alt={'arrow'} />
+                    </div>
+                    <div className='cards-wrapper'>
+                        <TransportSmallCard haveAbout/>
+                        <TransportSmallCard />
+                        <TransportSmallCard />
+                    </div>
+                </div>
+                <div>
+                    <div className='more-section'>
+                        <Divider title={'ترابری'}/>
+                        <img src={arrow} alt={'arrow'} />
+                    </div>
+                    <div className='cards-wrapper'>
+                        <TransportSmallCard haveAbout/>
+                        <TransportSmallCard />
+                        <TransportSmallCard />
+                    </div>
+                </div>
+                <div>
+                    <div className='more-section'>
+                        <Divider title={'مالی اعتباری'}/>
+                        <img src={arrow} alt={'arrow'} />
+                    </div>
+                    <div className='cards-wrapper'>
+                        <TransportSmallCard haveAbout/>
+                        <TransportSmallCard />
+                        <TransportSmallCard />
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+export default TransportSection

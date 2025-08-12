@@ -1,0 +1,53 @@
+.more-card-component{
+    background-color: #F5F5F5;
+    border-radius: 24px;
+    padding:42px 24px 40px 24px;
+    width: 350px;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    direction: rtl;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.arrow-button-more {
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.arrow-button-more:hover {
+    transform: scale(1.1);
+}
+.more-card-header-title{
+    width: 118px;
+    margin-right: 47px;
+}
+.more-card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 64px;
+    gap: 12px;
+}
+.more-card-header span{
+    font-size: 18px;
+    font-weight: 700;
+    color: #212529;
+    display: inline-flex;
+    align-items: center;
+}
+
+.more-card-header .arrow-button-more svg{ display:block; }
+.image-wrapper-more{
+    width: 85%;
+    object-fit: fill;
+    position: absolute;
+    bottom: 40px;
+    left: 24px;
+}

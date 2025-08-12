@@ -1,10 +1,10 @@
 import React from 'react';
 import '../../styles/components/articleCard.css'; 
 
-const ArrowIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 19" fill="none">
-    <path d="M-1.15096e-07 9.34823L16 0L8.22921 9.4647L15.7554 19L-1.15096e-07 9.34823Z" fill="black"/>
-    </svg>
+export const ArrowIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19" fill="none">
+  <path d="M-1.15096e-07 9.34823L16 0L8.22921 9.4647L15.7554 19L-1.15096e-07 9.34823Z" fill="black"/>
+  </svg>
 );
 
 export const CalendarIcon = () => (
@@ -57,9 +57,9 @@ const ArticleCard = ({ imageUrl, tags, title, description, date, onArrowClick, b
       </div>
       <div className="card-image-section">
         <img src={imageUrl} alt={title || 'Article Image'} />
-        <button className="arrow-button" onClick={onArrowClick} aria-label="Previous">
+        <div className="arrow-button" onClick={onArrowClick} aria-label="Previous">
           <ArrowIcon />
-        </button>
+        </div>
       </div>
 
 

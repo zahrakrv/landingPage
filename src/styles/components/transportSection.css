@@ -1,0 +1,32 @@
+.transport-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 85px;
+    /* gap:99px */
+}
+.tower-img {
+    width: 20%;
+    height: 993px;
+    object-fit: fill;
+}
+.gray-box{
+    height: 976px;
+    width: 75%;
+    background-color: #F5F5F5;
+    border-radius: 32px;
+}
+.more-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+.cards-wrapper{
+    display: flex;
+    align-items: center;
+    
+}

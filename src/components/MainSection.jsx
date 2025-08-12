@@ -1,15 +1,18 @@
 
 import '../styles/components/landing.css';
+import Divider from './details/Divider.jsx';
 import TitleSec from './details/TitleSec.jsx';
 import TextBoxSec from './details/TextBoxSec.jsx';
-import Divider from './details/Divider.jsx';
-import SectionsTitle from './details/SectionsTitle.jsx';
-import firstImage from '../assets/image/blog-1.png'
-import secondImage from '../assets/image/blog-2.png'
 import thirdImage from '../assets/image/blog-3.png'
 import forthImage from '../assets/image/blog-4.png'
 import ArticleCard from './details/ArticleCard.jsx'
+import firstImage from '../assets/image/blog-1.png'
+import secondImage from '../assets/image/blog-2.png'
+import SectionsTitle from './details/SectionsTitle.jsx';
+import MoreArticleCard from './details/MoreArticleCard.jsx'
+import TransportSection from './details/TransportSection.jsx'
 import SecondArticleCard from './details/secondArticleCard.jsx'
+import TransportSmallCard from './details/TransportSmallCard.jsx'
 
 const MainSection=()=>{
       const fullArticleData = {
@@ -88,12 +91,13 @@ return(
         descColor={simpleArticleData.descColor}
       />
     </div>
-    <div className='article-wrapper'>
+    <div className='article-wrapper second-article-wrapper'>
       <SecondArticleCard 
         imageUrl={smallArticleData.imageUrl}
         tags={smallArticleData.tags}
         title={smallArticleData.title}
         date={smallArticleData.date}
+        onArrowClick={handleArrowClick}
       />
       
       <SecondArticleCard 
@@ -101,8 +105,12 @@ return(
         tags={secSmallArticleData.tags}
         title={secSmallArticleData.title}
         date={secSmallArticleData.date}
+        onArrowClick={handleArrowClick}
       />
+      <MoreArticleCard/>
     </div>
+    <TransportSection/>
+    {/* <TransportSmallCard/> */}
       </>
 )
 }
