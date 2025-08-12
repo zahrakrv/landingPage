@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/components/divider.css';
 
-const Divider = ({title}) => {
+const Divider = ({title, itemTitle='جمله کوتاه یا یک تایتل'}) => {
 return (
     <div className="section-header-container">
       <div className="subtitle-row">
@@ -15,7 +15,7 @@ return (
 
       </div>
       <h2 className="main-title">
-        جمله کوتاه یا یک تایتل
+        {itemTitle}
       </h2>
     </div>
   );

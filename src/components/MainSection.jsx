@@ -12,8 +12,7 @@ import SectionsTitle from './details/SectionsTitle.jsx';
 import MoreArticleCard from './details/MoreArticleCard.jsx'
 import TransportSection from './details/TransportSection.jsx'
 import SecondArticleCard from './details/secondArticleCard.jsx'
-import TransportSmallCard from './details/TransportSmallCard.jsx'
-
+import ContactUs from './details/ContactUs.jsx'
 const MainSection=()=>{
       const fullArticleData = {
     imageUrl: firstImage,
@@ -110,7 +109,7 @@ return(
       <MoreArticleCard/>
     </div>
     <TransportSection/>
-    {/* <TransportSmallCard/> */}
+    <ContactUs/>
       </>
 )
 }
