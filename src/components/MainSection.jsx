@@ -13,6 +13,8 @@ import MoreArticleCard from './details/MoreArticleCard.jsx'
 import TransportSection from './details/TransportSection.jsx'
 import SecondArticleCard from './details/secondArticleCard.jsx'
 import ContactUs from './details/ContactUs.jsx'
+import SocialSection from './details/SocialSection.jsx'
+
 const MainSection=()=>{
       const fullArticleData = {
     imageUrl: firstImage,
@@ -110,6 +112,7 @@ return(
     </div>
     <TransportSection/>
     <ContactUs/>
+    <SocialSection />
       </>
 )
 }

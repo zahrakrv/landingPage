@@ -43,21 +43,50 @@
     min-width: 120px;
     font-family: Arial, sans-serif;
     font-size: 14px;
-    font-weight: normal;
     cursor: pointer;
     position: relative;
     z-index: 12;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+    transition: background-color 0.4s ease, color 0.4s ease;
 }
-.rectangle:hover {
-    background-color: #2563eb;
-    transition: background-color 0.3s ease;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+.rectangle::after {
+    content: '>'; 
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #000;
+    color: #FFF;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; 
+    transform: translateX(50px);
+    transition: all 0.4s ease-in-out;
 }
 
-/* Responsive Design */
+.rectangle span {
+    display: inline-block; 
+    transition: transform 0.4s ease-in-out, color 0.4s ease;
+}
+
+.rectangle:hover {
+    background-color: #F5F5F5;
+}
+.rectangle:hover span {
+    color: #000;
+    transform: translateX(-12px);
+}
+
+.rectangle:hover::after {
+    opacity: 1;
+    transform: translateX(-50px);
+    margin-left: 8px;
+}
 @media (max-width: 920px) {
     .row {
         flex-wrap: wrap;
@@ -89,7 +118,6 @@
         padding: 16px;
     }
 }
-
 @media (max-width: 480px) {
     .row {
         gap: 8px;
@@ -103,7 +131,6 @@
         padding: 12px;
     }
 }
-
 @media (max-width: 360px) {
     .rectangle {
         min-width: 80px;
