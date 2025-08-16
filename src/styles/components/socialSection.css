@@ -1,0 +1,62 @@
+.social-section {
+  background-image: url('../../assets/image/lines.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+}
+
+.social-icons-container {
+  display: flex;
+  gap: 0.75rem;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 10;
+}
+
+.social-icons-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #F5F5F5;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  position: relative; 
+}
+
+.social-icons-container a img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.social-icons-container a:hover {
+  background-color: #e0e0e0;
+}
+
+.social-icons-container a::after {
+  content: '';
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  width: 62px; 
+  height: 77px;
+  background-image: url('../../assets/image/social/code.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.social-icons-container a:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -5px); 
+}

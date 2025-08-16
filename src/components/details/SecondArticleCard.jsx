@@ -1,7 +1,7 @@
 import React from 'react';
-import '../../styles/components/secondArticleCard.css';
-import {CalendarIcon} from './ArticleCard.jsx'
 import {ArrowIcon} from './ArticleCard.jsx'
+import {CalendarIcon} from './ArticleCard.jsx'
+import '../../styles/components/secondArticleCard.css';
 
 const SecondArticleCard = ({ imageUrl, tags, title, date, onArrowClick }) => {
   return (

@@ -1,0 +1,9 @@
+.contact-us{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+.divider-wrapper{
+    padding: 80px 0 16px 0;
+}

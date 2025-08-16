@@ -12,9 +12,7 @@ const styles = {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        minHeight: '100vh',
         position: 'relative',
-        maxHeight:'306px'
     },
     
     card: {
@@ -24,7 +22,7 @@ const styles = {
         textAlign: 'center',
         maxWidth: '450px',
         maxHeight:'306px',
-        margin: '20px',
+        margin: '0 10px',
         overflow:'hidden'
     },
 
@@ -35,7 +33,6 @@ const styles = {
     description: {
         color: '#333',
         fontSize: '14px',
-        // lineHeight: '2.2rem',
         margin: '0 20px 60px 20px',
         zIndex:'10'
     },
@@ -52,7 +49,7 @@ const styles = {
         alignItems: 'center',
         clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)',
         position:'absolute',
-        bottom:'125px',
+        bottom:'-49px',
         left:'30%',
         zIndex:0
     },
