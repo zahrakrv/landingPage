@@ -1,7 +1,7 @@
-import React, { useState, useRef, useEffect } from 'react';
 import '../../styles/components/videoContainer.css';
-import PlayIcon from '../../assets/image/play-button.png';
 import HeroVideo from '../../assets/video/hero.mp4';
+import PlayIcon from '../../assets/image/play-button.png';
+import React, { useState, useRef, useEffect } from 'react';
 
 const VideoContainer = () => {
   const [isPlaying, setIsPlaying] = useState(false);

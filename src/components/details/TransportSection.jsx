@@ -1,7 +1,7 @@
-import '../../styles/components/transportSection.css'
-import towerImg from '../../assets/image/tower.png'
-import arrow from '../../assets/image/arrow.png'
 import Divider from './Divider'
+import arrow from '../../assets/image/arrow.png'
+import towerImg from '../../assets/image/tower.png'
+import '../../styles/components/transportSection.css'
 import TransportSmallCard from './TransportSmallCard.jsx'
 
 const TransportSection = () => {

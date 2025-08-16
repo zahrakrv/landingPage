@@ -2,18 +2,18 @@
 import '../styles/components/landing.css';
 import Divider from './details/Divider.jsx';
 import TitleSec from './details/TitleSec.jsx';
+import ContactUs from './details/ContactUs.jsx'
 import TextBoxSec from './details/TextBoxSec.jsx';
 import thirdImage from '../assets/image/blog-3.png'
 import forthImage from '../assets/image/blog-4.png'
 import ArticleCard from './details/ArticleCard.jsx'
 import firstImage from '../assets/image/blog-1.png'
 import secondImage from '../assets/image/blog-2.png'
+import SocialSection from './details/SocialSection.jsx'
 import SectionsTitle from './details/SectionsTitle.jsx';
 import MoreArticleCard from './details/MoreArticleCard.jsx'
 import TransportSection from './details/TransportSection.jsx'
-import SecondArticleCard from './details/secondArticleCard.jsx'
-import ContactUs from './details/ContactUs.jsx'
-import SocialSection from './details/SocialSection.jsx'
+import SecondArticleCard from './details/SecondArticleCard.jsx'
 
 const MainSection=()=>{
       const fullArticleData = {

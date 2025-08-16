@@ -37,26 +37,24 @@ const Header = () => {
             </div>
           </div>
 
-          {isDropdownOpen && (
-            <div className="dropdownMenu">
-              <a href="/en" className="lang-item">
-                <span>En</span>
-                <span>English</span>
-              </a>
-              <a href="/fa" className="lang-item">
-                <span>فا</span>
-                <span>فارسی</span>
-              </a>
-              <a href="/ru" className="lang-item">
-                <span>Ru</span>
-                <span>Russian</span>
-              </a>
-              <a href="/tr" className="lang-item">
-                <span>Tr</span>
-                <span>Turkish</span>
-              </a>
-            </div>
-          )} 
+          <div className={`dropdownMenu ${isDropdownOpen ? 'active' : ''}`}>
+            <a href="/en" className="lang-item">
+              <span>En</span>
+              <span>English</span>
+            </a>
+            <a href="/fa" className="lang-item">
+              <span>فا</span>
+              <span>فارسی</span>
+            </a>
+            <a href="/ru" className="lang-item">
+              <span>Ru</span>
+              <span>Russian</span>
+            </a>
+            <a href="/tr" className="lang-item">
+              <span>Tr</span>
+              <span>Turkish</span>
+            </a>
+          </div>
         </div>
       </nav>
     </header>

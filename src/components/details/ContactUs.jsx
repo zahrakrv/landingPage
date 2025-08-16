@@ -1,7 +1,7 @@
+import Divider from "./Divider"
 import FormSection from "./FormSection"
 import '../../styles/components/contactUs.css'
 import address from '../../assets/image/address.png'
-import Divider from "./Divider"
 const ContactUs=()=>{
     return(
         <>

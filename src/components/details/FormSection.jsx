@@ -1,8 +1,8 @@
 import React from 'react';
-import { FaUser, FaThLarge, FaChevronDown, FaEnvelope, FaPhoneAlt, FaPen } from 'react-icons/fa';
 import '../../styles/components/formSection.css';
 import CustomDropdown from './CustomDropdown.jsx'
 import captcha from '../../assets/image/captcha.png'
+import { FaUser, FaEnvelope, FaPhoneAlt, FaPen } from 'react-icons/fa';
 
 const FormSection = () => {
     const categoryOptions = ['موقعیت شغلی', 'ایده و طرح', 'انتقادات و پیشنهادات'];
@@ -66,8 +66,6 @@ const FormSection = () => {
               <label htmlFor="recaptcha-checkbox">من ربات نیستم</label>
               <div className="recaptcha-logo">
                 <img src={captcha} alt="reCAPTCHA" />
-                {/* <span>reCAPTCHA</span>
-                <a href="#">Privacy</a> - <a href="#">Terms</a> */}
               </div>
             </div>
           </div>

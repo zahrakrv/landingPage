@@ -1,6 +1,6 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { FaThLarge, FaChevronUp } from 'react-icons/fa';
 import '../../styles/components/customDropdown.css';
+import { FaThLarge, FaChevronUp } from 'react-icons/fa';
+import React, { useState, useRef, useEffect } from 'react';
 
 const CustomDropdown = ({ options, placeholder }) => {
   const [isOpen, setIsOpen] = useState(false);

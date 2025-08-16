@@ -1,7 +1,7 @@
 import React from 'react';
-import { FiMail, FiMapPin, FiPhone } from 'react-icons/fi';
 import '../styles/components/footer.css'; 
 import logo from '../assets/image/logo-3.png'
+import { FiMail, FiMapPin, FiPhone } from 'react-icons/fi';
 
 const Footer = () => {
     return (
@@ -17,7 +17,7 @@ const Footer = () => {
                 </div>
                 <div className="contact-item">
                     <FiMapPin />
-                    <span>تهران، جهان کودک، برج ذات وان</span>
+                    <span>تهران، جهان کودک، برج دات وان</span>
                 </div>
                 <div className="contact-item">
                     <FiPhone />
@@ -69,7 +69,7 @@ const Footer = () => {
             </div>
 
             <div className="footer-bottom">
-                <div className="copyright-text">© هر وارد. هر تصویر. هر پیوند. متعلق به گروه ارزش آفرینی وان است</div>
+                <div className="copyright-text">هر واژه، هر تصویر، هر پیوند، متعلق به گروه ارزش آفرینی وان است @</div>
             </div>
         </footer>
     );

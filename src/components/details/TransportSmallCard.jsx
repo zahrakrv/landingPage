@@ -12,9 +12,7 @@ const styles = {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        // minHeight: '100vh',
         position: 'relative',
-        // maxHeight:'306px'
     },
     
     card: {
@@ -35,7 +33,6 @@ const styles = {
     description: {
         color: '#333',
         fontSize: '14px',
-        // lineHeight: '2.2rem',
         margin: '0 20px 60px 20px',
         zIndex:'10'
     },

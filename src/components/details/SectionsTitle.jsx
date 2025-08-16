@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../styles/components/sectionsTitle.css';
 import Divider from './Divider.jsx';
+import '../../styles/components/sectionsTitle.css';
 
 const SectionsTitle = () => {
   const firstRowButtons = ['تراپری', 'مالی اعتباری', 'رسانه', 'تراپری', 'تراپری'];
