@@ -7,13 +7,14 @@
     align-items: center;
     width: 100%;
     box-sizing: border-box;
+    margin-top: -183px;
 }
 .footer-logo {
     margin-bottom: 2rem;
 }
 
 .footer-logo img {
-    width: 120px;
+    width: 196x;
     filter: grayscale(1)
 }
 .footer-contact-info {
